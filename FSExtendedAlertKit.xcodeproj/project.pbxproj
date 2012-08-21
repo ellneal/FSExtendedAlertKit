@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		491D5E3B15E3ACCA00A755C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491D5E3A15E3ACCA00A755C7 /* Foundation.framework */; };
 		491D5E4015E3ACCA00A755C7 /* FSExtendedAlertKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 491D5E3F15E3ACCA00A755C7 /* FSExtendedAlertKit.h */; };
+		491D5E5815E3AF1700A755C7 /* FSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 491D5E5715E3AF1700A755C7 /* FSAlertView.m */; };
+		491D5E5D15E3B00700A755C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491D5E5C15E3B00700A755C7 /* UIKit.framework */; };
+		491D5E6815E3B8CB00A755C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491D5E5C15E3B00700A755C7 /* UIKit.framework */; };
+		491D5E6915E3B8CB00A755C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491D5E3A15E3ACCA00A755C7 /* Foundation.framework */; };
+		491D5E6B15E3B8CB00A755C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491D5E6A15E3B8CB00A755C7 /* CoreGraphics.framework */; };
+		491D5E7115E3B8CB00A755C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 491D5E6F15E3B8CB00A755C7 /* InfoPlist.strings */; };
+		491D5E7315E3B8CB00A755C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 491D5E7215E3B8CB00A755C7 /* main.m */; };
+		491D5E7715E3B8CB00A755C7 /* FSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 491D5E7615E3B8CB00A755C7 /* FSAppDelegate.m */; };
+		491D5E7A15E3B8CB00A755C7 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491D5E7815E3B8CB00A755C7 /* MainStoryboard_iPhone.storyboard */; };
+		491D5E7D15E3B8CB00A755C7 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491D5E7B15E3B8CB00A755C7 /* MainStoryboard_iPad.storyboard */; };
+		491D5E8015E3B8CB00A755C7 /* FSExtendedAlertKitExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491D5E7F15E3B8CB00A755C7 /* FSExtendedAlertKitExampleViewController.m */; };
+		491D5E8415E3C28E00A755C7 /* libFSExtendedAlertKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 491D5E3715E3ACCA00A755C7 /* libFSExtendedAlertKit.a */; };
+		491D5E8B15E3D56E00A755C7 /* FSActivityIndicatorAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 491D5E8A15E3D56E00A755C7 /* FSActivityIndicatorAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +42,23 @@
 		491D5E3A15E3ACCA00A755C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		491D5E3E15E3ACCA00A755C7 /* FSExtendedAlertKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FSExtendedAlertKit-Prefix.pch"; sourceTree = "<group>"; };
 		491D5E3F15E3ACCA00A755C7 /* FSExtendedAlertKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSExtendedAlertKit.h; sourceTree = "<group>"; };
+		491D5E5615E3AF1700A755C7 /* FSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAlertView.h; sourceTree = "<group>"; };
+		491D5E5715E3AF1700A755C7 /* FSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAlertView.m; sourceTree = "<group>"; };
+		491D5E5C15E3B00700A755C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		491D5E6615E3B8CB00A755C7 /* FSExtendedAlertKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSExtendedAlertKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		491D5E6A15E3B8CB00A755C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		491D5E6E15E3B8CB00A755C7 /* FSExtendedAlertKitExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FSExtendedAlertKitExample-Info.plist"; sourceTree = "<group>"; };
+		491D5E7015E3B8CB00A755C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		491D5E7215E3B8CB00A755C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		491D5E7415E3B8CB00A755C7 /* FSExtendedAlertKitExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FSExtendedAlertKitExample-Prefix.pch"; sourceTree = "<group>"; };
+		491D5E7515E3B8CB00A755C7 /* FSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSAppDelegate.h; sourceTree = "<group>"; };
+		491D5E7615E3B8CB00A755C7 /* FSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSAppDelegate.m; sourceTree = "<group>"; };
+		491D5E7915E3B8CB00A755C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		491D5E7C15E3B8CB00A755C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		491D5E7E15E3B8CB00A755C7 /* FSExtendedAlertKitExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSExtendedAlertKitExampleViewController.h; sourceTree = "<group>"; };
+		491D5E7F15E3B8CB00A755C7 /* FSExtendedAlertKitExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSExtendedAlertKitExampleViewController.m; sourceTree = "<group>"; };
+		491D5E8915E3D56E00A755C7 /* FSActivityIndicatorAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSActivityIndicatorAlertView.h; sourceTree = "<group>"; };
+		491D5E8A15E3D56E00A755C7 /* FSActivityIndicatorAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSActivityIndicatorAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +66,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491D5E5D15E3B00700A755C7 /* UIKit.framework in Frameworks */,
 				491D5E3B15E3ACCA00A755C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		491D5E6315E3B8CB00A755C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491D5E8415E3C28E00A755C7 /* libFSExtendedAlertKit.a in Frameworks */,
+				491D5E6815E3B8CB00A755C7 /* UIKit.framework in Frameworks */,
+				491D5E6915E3B8CB00A755C7 /* Foundation.framework in Frameworks */,
+				491D5E6B15E3B8CB00A755C7 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				491D5E3C15E3ACCA00A755C7 /* FSExtendedAlertKit */,
+				491D5E6C15E3B8CB00A755C7 /* FSExtendedAlertKitExample */,
 				491D5E3915E3ACCA00A755C7 /* Frameworks */,
 				491D5E3815E3ACCA00A755C7 /* Products */,
 			);
@@ -56,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				491D5E3715E3ACCA00A755C7 /* libFSExtendedAlertKit.a */,
+				491D5E6615E3B8CB00A755C7 /* FSExtendedAlertKitExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				491D5E3A15E3ACCA00A755C7 /* Foundation.framework */,
+				491D5E5C15E3B00700A755C7 /* UIKit.framework */,
+				491D5E6A15E3B8CB00A755C7 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -72,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				491D5E3F15E3ACCA00A755C7 /* FSExtendedAlertKit.h */,
+				491D5E5415E3AEF200A755C7 /* Alert Views */,
 				491D5E3D15E3ACCA00A755C7 /* Supporting Files */,
 			);
 			path = FSExtendedAlertKit;
@@ -81,6 +128,43 @@
 			isa = PBXGroup;
 			children = (
 				491D5E3E15E3ACCA00A755C7 /* FSExtendedAlertKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		491D5E5415E3AEF200A755C7 /* Alert Views */ = {
+			isa = PBXGroup;
+			children = (
+				491D5E5615E3AF1700A755C7 /* FSAlertView.h */,
+				491D5E5715E3AF1700A755C7 /* FSAlertView.m */,
+				491D5E8915E3D56E00A755C7 /* FSActivityIndicatorAlertView.h */,
+				491D5E8A15E3D56E00A755C7 /* FSActivityIndicatorAlertView.m */,
+			);
+			name = "Alert Views";
+			path = FSExtendedAlertViews;
+			sourceTree = "<group>";
+		};
+		491D5E6C15E3B8CB00A755C7 /* FSExtendedAlertKitExample */ = {
+			isa = PBXGroup;
+			children = (
+				491D5E7515E3B8CB00A755C7 /* FSAppDelegate.h */,
+				491D5E7615E3B8CB00A755C7 /* FSAppDelegate.m */,
+				491D5E7815E3B8CB00A755C7 /* MainStoryboard_iPhone.storyboard */,
+				491D5E7B15E3B8CB00A755C7 /* MainStoryboard_iPad.storyboard */,
+				491D5E7E15E3B8CB00A755C7 /* FSExtendedAlertKitExampleViewController.h */,
+				491D5E7F15E3B8CB00A755C7 /* FSExtendedAlertKitExampleViewController.m */,
+				491D5E6D15E3B8CB00A755C7 /* Supporting Files */,
+			);
+			path = FSExtendedAlertKitExample;
+			sourceTree = "<group>";
+		};
+		491D5E6D15E3B8CB00A755C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				491D5E6E15E3B8CB00A755C7 /* FSExtendedAlertKitExample-Info.plist */,
+				491D5E6F15E3B8CB00A755C7 /* InfoPlist.strings */,
+				491D5E7215E3B8CB00A755C7 /* main.m */,
+				491D5E7415E3B8CB00A755C7 /* FSExtendedAlertKitExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -105,6 +189,23 @@
 			productReference = 491D5E3715E3ACCA00A755C7 /* libFSExtendedAlertKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		491D5E6515E3B8CB00A755C7 /* FSExtendedAlertKitExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 491D5E8115E3B8CB00A755C7 /* Build configuration list for PBXNativeTarget "FSExtendedAlertKitExample" */;
+			buildPhases = (
+				491D5E6215E3B8CB00A755C7 /* Sources */,
+				491D5E6315E3B8CB00A755C7 /* Frameworks */,
+				491D5E6415E3B8CB00A755C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSExtendedAlertKitExample;
+			productName = FSExtendedAlertKitExample;
+			productReference = 491D5E6615E3B8CB00A755C7 /* FSExtendedAlertKitExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -127,19 +228,72 @@
 			projectRoot = "";
 			targets = (
 				491D5E3615E3ACCA00A755C7 /* FSExtendedAlertKit */,
+				491D5E6515E3B8CB00A755C7 /* FSExtendedAlertKitExample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		491D5E6415E3B8CB00A755C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491D5E7115E3B8CB00A755C7 /* InfoPlist.strings in Resources */,
+				491D5E7A15E3B8CB00A755C7 /* MainStoryboard_iPhone.storyboard in Resources */,
+				491D5E7D15E3B8CB00A755C7 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		491D5E3315E3ACCA00A755C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491D5E5815E3AF1700A755C7 /* FSAlertView.m in Sources */,
+				491D5E8B15E3D56E00A755C7 /* FSActivityIndicatorAlertView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		491D5E6215E3B8CB00A755C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491D5E7315E3B8CB00A755C7 /* main.m in Sources */,
+				491D5E7715E3B8CB00A755C7 /* FSAppDelegate.m in Sources */,
+				491D5E8015E3B8CB00A755C7 /* FSExtendedAlertKitExampleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		491D5E6F15E3B8CB00A755C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				491D5E7015E3B8CB00A755C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		491D5E7815E3B8CB00A755C7 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				491D5E7915E3B8CB00A755C7 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		491D5E7B15E3B8CB00A755C7 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				491D5E7C15E3B8CB00A755C7 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		491D5E4315E3ACCB00A755C7 /* Debug */ = {
@@ -212,6 +366,37 @@
 			};
 			name = Release;
 		};
+		491D5E8215E3B8CB00A755C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FSExtendedAlertKitExample/FSExtendedAlertKitExample-Prefix.pch";
+				INFOPLIST_FILE = "FSExtendedAlertKitExample/FSExtendedAlertKitExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		491D5E8315E3B8CB00A755C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FSExtendedAlertKitExample/FSExtendedAlertKitExample-Prefix.pch";
+				INFOPLIST_FILE = "FSExtendedAlertKitExample/FSExtendedAlertKitExample-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -229,6 +414,14 @@
 			buildConfigurations = (
 				491D5E4615E3ACCB00A755C7 /* Debug */,
 				491D5E4715E3ACCB00A755C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		491D5E8115E3B8CB00A755C7 /* Build configuration list for PBXNativeTarget "FSExtendedAlertKitExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				491D5E8215E3B8CB00A755C7 /* Debug */,
+				491D5E8315E3B8CB00A755C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
