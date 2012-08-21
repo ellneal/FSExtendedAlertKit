@@ -1,0 +1,238 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		491D5E3B15E3ACCA00A755C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491D5E3A15E3ACCA00A755C7 /* Foundation.framework */; };
+		491D5E4015E3ACCA00A755C7 /* FSExtendedAlertKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 491D5E3F15E3ACCA00A755C7 /* FSExtendedAlertKit.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		491D5E3515E3ACCA00A755C7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				491D5E4015E3ACCA00A755C7 /* FSExtendedAlertKit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		491D5E3715E3ACCA00A755C7 /* libFSExtendedAlertKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFSExtendedAlertKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		491D5E3A15E3ACCA00A755C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		491D5E3E15E3ACCA00A755C7 /* FSExtendedAlertKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FSExtendedAlertKit-Prefix.pch"; sourceTree = "<group>"; };
+		491D5E3F15E3ACCA00A755C7 /* FSExtendedAlertKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSExtendedAlertKit.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		491D5E3415E3ACCA00A755C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491D5E3B15E3ACCA00A755C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		491D5E2C15E3ACCA00A755C7 = {
+			isa = PBXGroup;
+			children = (
+				491D5E3C15E3ACCA00A755C7 /* FSExtendedAlertKit */,
+				491D5E3915E3ACCA00A755C7 /* Frameworks */,
+				491D5E3815E3ACCA00A755C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		491D5E3815E3ACCA00A755C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				491D5E3715E3ACCA00A755C7 /* libFSExtendedAlertKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		491D5E3915E3ACCA00A755C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				491D5E3A15E3ACCA00A755C7 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		491D5E3C15E3ACCA00A755C7 /* FSExtendedAlertKit */ = {
+			isa = PBXGroup;
+			children = (
+				491D5E3F15E3ACCA00A755C7 /* FSExtendedAlertKit.h */,
+				491D5E3D15E3ACCA00A755C7 /* Supporting Files */,
+			);
+			path = FSExtendedAlertKit;
+			sourceTree = "<group>";
+		};
+		491D5E3D15E3ACCA00A755C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				491D5E3E15E3ACCA00A755C7 /* FSExtendedAlertKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		491D5E3615E3ACCA00A755C7 /* FSExtendedAlertKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 491D5E4515E3ACCB00A755C7 /* Build configuration list for PBXNativeTarget "FSExtendedAlertKit" */;
+			buildPhases = (
+				491D5E3315E3ACCA00A755C7 /* Sources */,
+				491D5E3415E3ACCA00A755C7 /* Frameworks */,
+				491D5E3515E3ACCA00A755C7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSExtendedAlertKit;
+			productName = FSExtendedAlertKit;
+			productReference = 491D5E3715E3ACCA00A755C7 /* libFSExtendedAlertKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		491D5E2E15E3ACCA00A755C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = emdentec;
+			};
+			buildConfigurationList = 491D5E3115E3ACCA00A755C7 /* Build configuration list for PBXProject "FSExtendedAlertKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 491D5E2C15E3ACCA00A755C7;
+			productRefGroup = 491D5E3815E3ACCA00A755C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				491D5E3615E3ACCA00A755C7 /* FSExtendedAlertKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		491D5E3315E3ACCA00A755C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		491D5E4315E3ACCB00A755C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		491D5E4415E3ACCB00A755C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		491D5E4615E3ACCB00A755C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FSExtendedAlertKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FSExtendedAlertKit/FSExtendedAlertKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		491D5E4715E3ACCB00A755C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FSExtendedAlertKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FSExtendedAlertKit/FSExtendedAlertKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		491D5E3115E3ACCA00A755C7 /* Build configuration list for PBXProject "FSExtendedAlertKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				491D5E4315E3ACCB00A755C7 /* Debug */,
+				491D5E4415E3ACCB00A755C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		491D5E4515E3ACCB00A755C7 /* Build configuration list for PBXNativeTarget "FSExtendedAlertKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				491D5E4615E3ACCB00A755C7 /* Debug */,
+				491D5E4715E3ACCB00A755C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 491D5E2E15E3ACCA00A755C7 /* Project object */;
+}
