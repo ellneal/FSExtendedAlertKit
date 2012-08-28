@@ -22,6 +22,8 @@
 		491D5E8015E3B8CB00A755C7 /* FSExtendedAlertKitExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491D5E7F15E3B8CB00A755C7 /* FSExtendedAlertKitExampleViewController.m */; };
 		491D5E8415E3C28E00A755C7 /* libFSExtendedAlertKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 491D5E3715E3ACCA00A755C7 /* libFSExtendedAlertKit.a */; };
 		491D5E8B15E3D56E00A755C7 /* FSActivityIndicatorAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 491D5E8A15E3D56E00A755C7 /* FSActivityIndicatorAlertView.m */; };
+		491D5E8E15E3DA8B00A755C7 /* FSProgressAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 491D5E8D15E3DA8B00A755C7 /* FSProgressAlertView.m */; };
+		49A29FFB15ECC6C600671B74 /* _FSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A29FFA15ECC6C600671B74 /* _FSAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +61,10 @@
 		491D5E7F15E3B8CB00A755C7 /* FSExtendedAlertKitExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSExtendedAlertKitExampleViewController.m; sourceTree = "<group>"; };
 		491D5E8915E3D56E00A755C7 /* FSActivityIndicatorAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSActivityIndicatorAlertView.h; sourceTree = "<group>"; };
 		491D5E8A15E3D56E00A755C7 /* FSActivityIndicatorAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSActivityIndicatorAlertView.m; sourceTree = "<group>"; };
+		491D5E8C15E3DA8B00A755C7 /* FSProgressAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSProgressAlertView.h; sourceTree = "<group>"; };
+		491D5E8D15E3DA8B00A755C7 /* FSProgressAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSProgressAlertView.m; sourceTree = "<group>"; };
+		49A29FF915ECC6C600671B74 /* _FSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FSAlertView.h; sourceTree = "<group>"; };
+		49A29FFA15ECC6C600671B74 /* _FSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FSAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				491D5E3F15E3ACCA00A755C7 /* FSExtendedAlertKit.h */,
+				49A29FFD15ECC6EF00671B74 /* Private Classes */,
 				491D5E5415E3AEF200A755C7 /* Alert Views */,
 				491D5E3D15E3ACCA00A755C7 /* Supporting Files */,
 			);
@@ -139,6 +146,8 @@
 				491D5E5715E3AF1700A755C7 /* FSAlertView.m */,
 				491D5E8915E3D56E00A755C7 /* FSActivityIndicatorAlertView.h */,
 				491D5E8A15E3D56E00A755C7 /* FSActivityIndicatorAlertView.m */,
+				491D5E8C15E3DA8B00A755C7 /* FSProgressAlertView.h */,
+				491D5E8D15E3DA8B00A755C7 /* FSProgressAlertView.m */,
 			);
 			name = "Alert Views";
 			path = FSExtendedAlertViews;
@@ -167,6 +176,16 @@
 				491D5E7415E3B8CB00A755C7 /* FSExtendedAlertKitExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49A29FFD15ECC6EF00671B74 /* Private Classes */ = {
+			isa = PBXGroup;
+			children = (
+				49A29FF915ECC6C600671B74 /* _FSAlertView.h */,
+				49A29FFA15ECC6C600671B74 /* _FSAlertView.m */,
+			);
+			name = "Private Classes";
+			path = FSPrivateClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +272,8 @@
 			files = (
 				491D5E5815E3AF1700A755C7 /* FSAlertView.m in Sources */,
 				491D5E8B15E3D56E00A755C7 /* FSActivityIndicatorAlertView.m in Sources */,
+				491D5E8E15E3DA8B00A755C7 /* FSProgressAlertView.m in Sources */,
+				49A29FFB15ECC6C600671B74 /* _FSAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +437,7 @@
 				491D5E4715E3ACCB00A755C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		491D5E8115E3B8CB00A755C7 /* Build configuration list for PBXNativeTarget "FSExtendedAlertKitExample" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +446,7 @@
 				491D5E8315E3B8CB00A755C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
