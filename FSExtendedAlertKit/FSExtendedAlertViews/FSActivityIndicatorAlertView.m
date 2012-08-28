@@ -7,9 +7,10 @@
 //
 
 #import "FSActivityIndicatorAlertView.h"
+#import "_FSAlertView.h"
 
 
-@interface FSActivityIndicatorAlertView () <UIAlertViewDelegate> {
+@interface FSActivityIndicatorAlertView () <UIAlertViewDelegate, _FSAlertViewLayoutDelegate> {
     
     void (^_cancelBlock)();
     void (^_willPresentBlock)();
@@ -18,7 +19,7 @@
     void (^_didDismissBlock)();
 }
 
-@property (strong, nonatomic) UIAlertView *alertView;
+@property (strong, nonatomic) _FSAlertView *alertView;
 
 @end
 
@@ -32,7 +33,8 @@
     
     if (self) {
         
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
+        _FSAlertView *alertView = [[_FSAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
+        [alertView setLayoutDelegate:self];
         
         UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
         [activityIndicator setAutoresizingMask:UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin];
