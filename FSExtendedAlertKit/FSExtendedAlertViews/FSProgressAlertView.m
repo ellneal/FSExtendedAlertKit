@@ -104,7 +104,9 @@
 
 - (void)setProgress:(float)progress animated:(BOOL)animated {
     
-    [self.progressView setProgress:progress animated:animated];
+    dispatch_async(dispatch_get_main_queue(), ^ {
+        [self.progressView setProgress:progress animated:animated];
+    });
 }
 
 
