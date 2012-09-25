@@ -245,11 +245,12 @@
 
 + (NSMutableArray *)activeAlertViews {
     
+    static dispatch_once_t dispatchToken;
     static NSMutableArray *activeAlertViews = nil;
     
-    if (activeAlertViews == nil) {
+    dispatch_once(&dispatchToken, ^ {
         activeAlertViews = [[NSMutableArray alloc] init];
-    }
+    });
     
     return activeAlertViews;
 }
