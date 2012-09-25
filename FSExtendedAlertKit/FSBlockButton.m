@@ -1,5 +1,5 @@
 //
-//  FSExtendedAlertKit.h
+//  FSBlockButton.m
 //  FSExtendedAlertKit
 //
 //	Copyright (c) 2012, emdentec (Elliot Neal)
@@ -29,6 +29,27 @@
 //
 
 #import "FSBlockButton.h"
-#import "FSAlertView.h"
-#import "FSActivityIndicatorAlertView.h"
-#import "FSProgressAlertView.h"
+
+
+@implementation FSBlockButton
+
+
+- (id)initWithTitle:(NSString *)title block:(void (^)())block {
+    
+    self = [super init];
+    
+    if (self) {
+        
+        _title = [title copy];
+        _block = [block copy];
+    }
+    
+    return self;
+}
+
++ (FSBlockButton *)blockButtonWithTitle:(NSString *)title block:(void (^)())block {
+    
+    return [[[self class] alloc] initWithTitle:title block:block];
+}
+
+@end
