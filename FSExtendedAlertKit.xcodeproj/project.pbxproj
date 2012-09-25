@@ -24,6 +24,7 @@
 		491D5E8B15E3D56E00A755C7 /* FSActivityIndicatorAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 491D5E8A15E3D56E00A755C7 /* FSActivityIndicatorAlertView.m */; };
 		491D5E8E15E3DA8B00A755C7 /* FSProgressAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 491D5E8D15E3DA8B00A755C7 /* FSProgressAlertView.m */; };
 		49A29FFB15ECC6C600671B74 /* _FSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A29FFA15ECC6C600671B74 /* _FSAlertView.m */; };
+		49AD6B931611C0FA007633A4 /* FSActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6B921611C0FA007633A4 /* FSActionSheet.m */; };
 		49AD6B961611C293007633A4 /* FSBlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6B951611C292007633A4 /* FSBlockButton.m */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		491D5E8D15E3DA8B00A755C7 /* FSProgressAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSProgressAlertView.m; sourceTree = "<group>"; };
 		49A29FF915ECC6C600671B74 /* _FSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FSAlertView.h; sourceTree = "<group>"; };
 		49A29FFA15ECC6C600671B74 /* _FSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FSAlertView.m; sourceTree = "<group>"; };
+		49AD6B911611C0FA007633A4 /* FSActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSActionSheet.h; sourceTree = "<group>"; };
+		49AD6B921611C0FA007633A4 /* FSActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSActionSheet.m; sourceTree = "<group>"; };
 		49AD6B941611C292007633A4 /* FSBlockButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSBlockButton.h; sourceTree = "<group>"; };
 		49AD6B951611C292007633A4 /* FSBlockButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSBlockButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +132,7 @@
 				491D5E3F15E3ACCA00A755C7 /* FSExtendedAlertKit.h */,
 				49A29FFD15ECC6EF00671B74 /* Private Classes */,
 				491D5E5415E3AEF200A755C7 /* Alert Views */,
+				49AD6B8F1611C0DA007633A4 /* Action Sheets */,
 				49AD6B941611C292007633A4 /* FSBlockButton.h */,
 				49AD6B951611C292007633A4 /* FSBlockButton.m */,
 				491D5E3D15E3ACCA00A755C7 /* Supporting Files */,
@@ -191,6 +195,16 @@
 			);
 			name = "Private Classes";
 			path = FSPrivateClasses;
+			sourceTree = "<group>";
+		};
+		49AD6B8F1611C0DA007633A4 /* Action Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				49AD6B911611C0FA007633A4 /* FSActionSheet.h */,
+				49AD6B921611C0FA007633A4 /* FSActionSheet.m */,
+			);
+			name = "Action Sheets";
+			path = FSExtendedActionSheets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +293,7 @@
 				491D5E8B15E3D56E00A755C7 /* FSActivityIndicatorAlertView.m in Sources */,
 				491D5E8E15E3DA8B00A755C7 /* FSProgressAlertView.m in Sources */,
 				49A29FFB15ECC6C600671B74 /* _FSAlertView.m in Sources */,
+				49AD6B931611C0FA007633A4 /* FSActionSheet.m in Sources */,
 				49AD6B961611C293007633A4 /* FSBlockButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
