@@ -179,6 +179,49 @@
     });
 }
 
+- (IBAction)showUIActionSheetButtonPressed:(id)sender {
+    
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Title of the action sheet" delegate:nil cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Delete" otherButtonTitles:@"First Other Button", @"Second Other Button", nil];
+    
+    [actionSheet showInView:[self view]];
+}
+
+- (IBAction)showFSActionSheetButtonPressed:(id)sender  {
+    
+    FSBlockButton *cancelButton = [FSBlockButton blockButtonWithTitle:@"Cancel" block:^ {
+        NSLog(@"Cancel button pressed");
+    }];
+    FSBlockButton *deleteButton = [FSBlockButton blockButtonWithTitle:@"Delete" block: ^ {
+        NSLog(@"Delete button pressed");
+    }];
+    FSBlockButton *firstOtherButton = [FSBlockButton blockButtonWithTitle:@"First Other Button" block:^ {
+        NSLog(@"First other button pressed");
+    }];
+    FSBlockButton *secondOtherButton = [FSBlockButton blockButtonWithTitle:@"Second Other Button" block:^ {
+        NSLog(@"Second other button pressed");
+    }];
+    
+    FSActionSheet *actionSheet = [[FSActionSheet alloc] initWithTitle:@"Title of the action sheet" cancelButton:cancelButton destructiveButton:deleteButton otherButtons:firstOtherButton, secondOtherButton, nil];
+    
+    [actionSheet setCancelBlock:^ {
+        NSLog(@"Cancelled.");
+    }];
+    [actionSheet setWillPresentBlock:^ {
+        NSLog(@"Will present.");
+    }];
+    [actionSheet setDidPresentBlock:^ {
+        NSLog(@"Did present.");
+    }];
+    [actionSheet setWillDismissBlock:^ {
+        NSLog(@"Will dismiss.");
+    }];
+    [actionSheet setDidDismissBlock:^ {
+        NSLog(@"Did dismiss.");
+    }];
+    
+    [actionSheet showInView:[self view]];
+}
+
 
 #pragma mark - UIAlertViewDelegate
 
