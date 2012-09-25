@@ -57,25 +57,27 @@
 
 - (IBAction)showUIAlertButtonPressed:(id)sender {
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Title" message:@"Message" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
-    
-    [alert addButtonWithTitle:@"Another"];
-    [alert addButtonWithTitle:@"And Another"];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Title" message:@"Message" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:@"Show", @"Another", @"And Another", nil];
     
     [alert show];
-    
-    NSLog(@"Cancel button index: %d", [alert cancelButtonIndex]);
 }
 
 - (IBAction)showFSAlertButtonPressed:(id)sender {
     
-    FSAlertView *alert = [[FSAlertView alloc] initWithTitle:@"Title" message:@"Message" cancelButtonTitle:@"Dismiss" cancelButtonBlock:^ {
-        NSLog(@"Cancel button pressed.");
+    FSBlockButton *cancelButton = [FSBlockButton blockButtonWithTitle:@"Dismiss" block:^ {
+        NSLog(@"Dismiss button pressed");
+    }];
+    FSBlockButton *showButton = [FSBlockButton blockButtonWithTitle:@"Show" block:^ {
+        NSLog(@"Show button pressed");
+    }];
+    FSBlockButton *anotherButton = [FSBlockButton blockButtonWithTitle:@"Another" block:^ {
+        NSLog(@"Another button pressed");
+    }];
+    FSBlockButton *andAnotherButton = [FSBlockButton blockButtonWithTitle:@"And Another" block:^ {
+        NSLog(@"And Another button pressed");
     }];
     
-    [alert addButtonWithTitle:@"Show" block:^ {
-        NSLog(@"Show button pressed.");
-    }];
+    FSAlertView *alert = [[FSAlertView alloc] initWithTitle:@"Title" message:@"Message" cancelButton:cancelButton otherButtons:showButton, anotherButton, andAnotherButton, nil];
     
     [alert setCancelBlock:^ {
         NSLog(@"Cancelled.");

@@ -31,10 +31,13 @@
 //
 
 
+@class FSBlockButton;
+
 @interface FSAlertView : NSObject
 
 
 - (id)initWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle cancelButtonBlock:(void (^)())block;
+- (id)initWithTitle:(NSString *)title message:(NSString *)message cancelButton:(FSBlockButton *)cancelButton otherButtons:(FSBlockButton *)otherButtons, ... NS_REQUIRES_NIL_TERMINATION;
 
 
 @property (copy, nonatomic) NSString *title;
@@ -42,6 +45,7 @@
 
 
 - (NSInteger)addButtonWithTitle:(NSString *)title block:(void (^)())block;
+- (NSInteger)addButton:(FSBlockButton *)blockButton;
 - (NSString *)buttonTitleAtIndex:(NSInteger)buttonIndex;
 
 @property (readonly, nonatomic) NSInteger numberOfButtons;

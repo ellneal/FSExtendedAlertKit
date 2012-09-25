@@ -31,11 +31,12 @@
 //
 
 #import "FSAlertView.h"
+#import "FSBlockButton.h"
 
 
 @interface FSAlertView () <UIAlertViewDelegate> {
     
-    NSMutableArray *_buttonBlocks;
+    NSMutableArray *_blockButtons;
     
     void (^_cancelBlock)();
     void (^_willPresentBlock)();
@@ -59,16 +60,38 @@
     if (self) {
         
         _alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:cancelButtonTitle otherButtonTitles:nil];
-        _buttonBlocks = [[NSMutableArray alloc] init];
+        _blockButtons = [[NSMutableArray alloc] init];
         
         if ([cancelButtonTitle length] > 0) {
-            if (block != nil) {
-                [_buttonBlocks addObject:[block copy]];
-            }
-            else {
-                [_buttonBlocks addObject:[NSNull null]];
-            }
+            FSBlockButton *cancelButton = [FSBlockButton blockButtonWithTitle:cancelButtonTitle block:block];
+            [_blockButtons addObject:cancelButton];
         }
+    }
+    
+    return self;
+}
+
+- (id)initWithTitle:(NSString *)title message:(NSString *)message cancelButton:(FSBlockButton *)cancelButton otherButtons:(FSBlockButton *)otherButtons, ... {
+    
+    self = [super init];
+    
+    if (self) {
+        
+        _alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:[cancelButton title] otherButtonTitles:nil];
+        _blockButtons = [[NSMutableArray alloc] init];
+        
+        if (cancelButton != nil) {
+            [_blockButtons addObject:cancelButton];
+        }
+        
+        va_list buttons;
+        va_start(buttons, otherButtons);
+        
+        for (FSBlockButton *button = otherButtons; button != nil; button = va_arg(buttons, FSBlockButton*)) {
+            [self addButton:button];
+        }
+        
+        va_end(buttons);
     }
     
     return self;
@@ -133,18 +156,19 @@
 
 - (NSInteger)addButtonWithTitle:(NSString *)title block:(void (^)())block {
     
-    NSInteger buttonIndex = [self.alertView addButtonWithTitle:title];
+    FSBlockButton *blockButton = [FSBlockButton blockButtonWithTitle:title block:block];
     
-    if (block) {
-        [_buttonBlocks insertObject:[block copy] atIndex:buttonIndex];
-    }
-    else {
-        [_buttonBlocks insertObject:[NSNull null] atIndex:buttonIndex];
-    }
+    return [self addButton:blockButton];
+}
+
+- (NSInteger)addButton:(FSBlockButton *)button {
+    
+    NSInteger buttonIndex = [self.alertView addButtonWithTitle:[button title]];
+    
+    [_blockButtons insertObject:button atIndex:buttonIndex];
     
     return buttonIndex;
 }
-
 
 - (void)dismissWithClickedButtonIndex:(NSInteger)buttonIndex animated:(BOOL)animated {
     
@@ -154,12 +178,12 @@
 
 - (void)performBlockForButtonAtIndex:(NSInteger)buttonIndex {
     
-    if (buttonIndex >= 0 && buttonIndex < [_buttonBlocks count]) {
+    if (buttonIndex >= 0 && buttonIndex < [_blockButtons count]) {
         
-        id obj = [_buttonBlocks objectAtIndex:buttonIndex];
+        FSBlockButton *blockButton = [_blockButtons objectAtIndex:buttonIndex];
         
-        if (![obj isEqual:[NSNull null]]) {
-            ((void (^)())obj)();
+        if ([blockButton block] != nil) {
+            blockButton.block();
         }
     }
 }
@@ -206,7 +230,7 @@
         _cancelBlock();
     }
     else {
-        [self performBlockForButtonAtIndex:[self.alertView cancelButtonIndex]];
+        [self performBlockForButtonAtIndex:[alertView cancelButtonIndex]];
     }
 }
 
