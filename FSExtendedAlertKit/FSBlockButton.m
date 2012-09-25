@@ -40,6 +40,8 @@
     
     if (self) {
         
+        NSAssert([title length] > 0, @"FSBlockButton must have a title");
+        
         _title = [title copy];
         _block = [block copy];
     }
