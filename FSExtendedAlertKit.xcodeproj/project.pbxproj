@@ -24,6 +24,11 @@
 		491D5E8B15E3D56E00A755C7 /* FSActivityIndicatorAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 491D5E8A15E3D56E00A755C7 /* FSActivityIndicatorAlertView.m */; };
 		491D5E8E15E3DA8B00A755C7 /* FSProgressAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 491D5E8D15E3DA8B00A755C7 /* FSProgressAlertView.m */; };
 		49A29FFB15ECC6C600671B74 /* _FSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A29FFA15ECC6C600671B74 /* _FSAlertView.m */; };
+		49A78C6E175A9DF2002C12D2 /* FSAlertView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 491D5E5615E3AF1700A755C7 /* FSAlertView.h */; };
+		49A78C6F175A9DF4002C12D2 /* FSActivityIndicatorAlertView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 491D5E8915E3D56E00A755C7 /* FSActivityIndicatorAlertView.h */; };
+		49A78C70175A9DFA002C12D2 /* FSProgressAlertView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 491D5E8C15E3DA8B00A755C7 /* FSProgressAlertView.h */; };
+		49A78C71175A9DFE002C12D2 /* FSActionSheet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49AD6B911611C0FA007633A4 /* FSActionSheet.h */; };
+		49A78C72175A9DFF002C12D2 /* FSBlockButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49AD6B941611C292007633A4 /* FSBlockButton.h */; };
 		49AD6B931611C0FA007633A4 /* FSActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6B921611C0FA007633A4 /* FSActionSheet.m */; };
 		49AD6B961611C293007633A4 /* FSBlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6B951611C292007633A4 /* FSBlockButton.m */; };
 /* End PBXBuildFile section */
@@ -36,6 +41,11 @@
 			dstSubfolderSpec = 16;
 			files = (
 				491D5E4015E3ACCA00A755C7 /* FSExtendedAlertKit.h in CopyFiles */,
+				49A78C72175A9DFF002C12D2 /* FSBlockButton.h in CopyFiles */,
+				49A78C6E175A9DF2002C12D2 /* FSAlertView.h in CopyFiles */,
+				49A78C6F175A9DF4002C12D2 /* FSActivityIndicatorAlertView.h in CopyFiles */,
+				49A78C70175A9DFA002C12D2 /* FSProgressAlertView.h in CopyFiles */,
+				49A78C71175A9DFE002C12D2 /* FSActionSheet.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
