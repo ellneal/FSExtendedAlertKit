@@ -1,5 +1,11 @@
 # FSExtendedAlertKit
 
+-----
+
+N.B. `FSExtendedAlertKit` is deprecated. Use `UIAlertController`, it's good.
+
+-----
+
 FSExtendedAlertKit provides simple ```UIAlertView``` alternatives for showing progress. There are five primary classes:
 
 ## FSBlockButton
