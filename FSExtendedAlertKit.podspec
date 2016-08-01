@@ -12,4 +12,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.ios.deployment_target = '5.0'
+
+  s.deprecated = true
 end
